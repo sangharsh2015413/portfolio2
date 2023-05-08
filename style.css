@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;700&family=Poppins:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;700&family=Source+Code+Pro:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.sidebaar{
+    position: absolute;
+    background-color: rgb(204, 202, 202);
+    width: 220px;
+    font-family: 'Poppins', sans-serif;
+    transition: transform 0.3s ease-in;
+} 
+
+.sidebaar nav{
+    padding: 45px;
+    height: 100vh;
+}
+
+.sidebaar nav li{
+    list-style: none;
+    font-size: 30px;
+    padding: 33px 0px;
+}
+
+.sidebaar nav li a{
+    text-decoration: none;
+    color: black;
+}
+
+.main{
+    /* background-color: pink; */
+    width: 90vw;
+}
+
+.container{
+    display: flex;
+}
+
+.infoContainer{
+    /* background-color: green; */
+    height: 78vh;
+    width: 80vw;
+    margin: 83px auto;
+    display: flex;
+    justify-content: space-around;
+}
+.devInfo{
+    /* position: absolute; */
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Source Code Pro', monospace;
+}
+.hello{
+   font-size: 3em;
+}
+.name{
+     font-size: 3em;
+     font-weight: bold;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.about{
+     font-size: 2.5em;
+}
+.moreabout{
+    font-size: 2.25em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 23px;
+}
+.buttons{
+   margin-top: 35px;
+   font-size: 16px;
+}
+
+.btn{
+  padding: 9px 14px;
+  border-radius: 22px;
+  color: white;
+  background-color: rgb(65, 146, 146);
+  font-weight: bold;
+  font-size: 2empx;
+  margin: 3px 3px;
+  cursor: pointer;
+}
+
+.btn:hover{
+  background-color: white;
+  color: rgb(65, 146, 146);
+}
+.devPic img{
+    height: 78vh;
+    border-radius: 150%;
+}
+
+/* CSS for contact me */
+.contactForm{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0px 34px;
+    /* padding-top: 80px; */
+    margin: 40px 100px;
+}
+
+.contactForm h1{
+    font-family: 'Source Code Pro', monospace;
+    padding: 12px 0;
+}
+
+.contactForm form div{
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactForm form div input{
+    width: 26vw;
+    border-radius: 5px;
+    margin: 6px 0px 0px 0px;
+    padding: 3px;
+}
+
+.contactForm form{
+    margin: 0 40px;
+}
+#emailHelp{
+    font-size: 15px;
+    color: midnightblue;
+    margin: 0px 5px;
+}
+
+#form-check{
+    flex-direction: row;
+}
+
+#form-check input{
+    width: 24px;
+    margin: 3px 0;
+}
+
+/* CSS for blog page */
+.blogContainer h1{
+    text-align: center;
+    margin-top: 70px;
+}
+
+.blogContainer{
+    margin: 0px 100px;
+}
+
+.blogItem{
+  margin: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ .blogItem h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 23px;
+    text-align: center;
+}
+
+.blogItem p{
+    font-family: 'Source Code Pro', monospace;
+}
+/* css for intro page */
+.intro{
+    margin: 85px 100px;
+}
+
+.intro h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 22px;
+}
+
+.intro p{
+    font-family: 'Source Code Pro', monospace;
+    margin: 22px ;
+}
+
+.skillConatiner{
+   padding: 12px;
+}
+
+.skillItem{
+    display: flex;
+    align-items: center;
+    margin: 0 25px;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 900;
+}
+
+.skill{
+    width: 265px;
+    height: 6px;
+    background-color: red;
+    border: 2px solid black;
+}
+
+.hundred{
+    width: 300px;
+    background-color: red;
+}
+
+.fifty{
+    width: 150px;
+    background-color: blueviolet;
+}
+
+.tfive{
+    width: 75px;
+    background-color: palevioletred;
+}
+
+.project{
+    margin: 0 25px;
+}
+
+.project ul li{
+    font-family: 'Source Code Pro', monospace;
+    /* font-weight: 900; */
+}
+
+
+.sidebaarGo{
+    transform: translate(-443px,0px);
+    position: absolute;
+}
+
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+
+
+.ham{
+   margin-top: 10px;
+   margin-left: 10px;
+}
+
+.cross{
+    margin-left: 184px;
+    margin-top: 10px;
+}
+
+@media (max-width:1315px){
+    /* .sidebaar{
+        transform: translate(-443px,0px);
+        position: absolute;
+    } */
+    .buttons{
+        font-size: 10px;
+    }
+    .devInfo{
+        font-size: 10px;
+    }
+    .devPic{
+        display: none;
+    }
+
+    .intro,.blogContainer,.contactForm{
+        margin: 50px 8px;
+    }
+}
